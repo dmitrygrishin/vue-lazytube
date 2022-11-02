@@ -35,6 +35,9 @@
     "buildminor": "npm version minor && yarn build",
     "buildpatch": "npm version patch && yarn build"
   },
+  "precommit": [
+     "build"
+   ],
   "license": "MIT",
   "dependencies": {
     "core-js": "^3.10.0",
