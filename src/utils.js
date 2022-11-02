@@ -13,7 +13,7 @@ const createIframe = (videoID, getTitle, iframeClass, type = 'youtube', flag = t
   if (flag) {
     iframeEl = document.createElement('iframe')
     if (type === 'youtube') {
-      iframeEl.setAttribute('src', `https://www.youtube.com/embed/${videoID}?enablejsapi=1&autoplay=1`)
+      iframeEl.setAttribute('src', `https://www.youtube.com/embed/${videoID}?enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=${videoID}`)
     } else {
       iframeEl.setAttribute('src', `https://player.vimeo.com/video/${videoID}?autoplay=1`)
     }
